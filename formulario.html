@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BotYa Paraguay</title>
+  <style>
+    body { font-family: 'Segoe UI'; background: #f1f5f9; padding: 40px; display: flex; justify-content: center; }
+    .panel { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.05); width: 100%; max-width: 400px; }
+    .panel h2 { margin-bottom: 20px; text-align: center; }
+    .panel input { width: 100%; padding: 8px; margin-top: 8px; border-radius: 6px; border: 1px solid #ccc; }
+    .panel label { margin-top: 10px; display: block; }
+    .panel button { margin-top: 20px; width: 100%; padding: 10px; border: none; border-radius: 6px; font-size: 16px; }
+    .guardar { background: #10b981; color: white; }
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <div style="font-size:40px;text-align:center;">🤖</div>
+    <h2>Panel del Cliente</h2>
+    <form action="/guardar" method="POST">
+      <label>Nombre:</label><input name="nombre" required>
+      <label>Instagram:</label><input name="instagram">
+      <label>Facebook:</label><input name="facebook">
+      <label>TikTok:</label><input name="tiktok">
+      <label>Correo:</label><input name="correo">
+      <label>WhatsApp:</label><input name="whatsapp">
+      <button type="submit" class="guardar">💾 Guardar y Activar Bot</button>
+    </form>
+  </div>
+</body>
+</html>
